@@ -1,0 +1,26 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.about__info {
+  width: 90%;
+  text-align: start;
+}
+
+.about img {
+  width: 15rem;
+}
+
+.about {
+  padding-bottom: var(--space-40);
+}
+
+@media (min-width: 768px) {
+  .about__info {
+    text-align: center;
+  }
+}

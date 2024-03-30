@@ -1,0 +1,78 @@
+.numerology {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 20%;
+  min-height: 100vh;
+}
+
+/* .glow {
+  color: #000000;
+  text-align: center;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffffff, 0 0 40px #ffffff,
+    0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #ffffff;
+} */
+
+.numerology__paragraph {
+  text-align: start;
+  width: 90%;
+}
+
+.numerology__form {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  margin: auto;
+  border: 2px solid var(--primary-foreground);
+  padding: var(--space-10);
+  gap: var(--space-05);
+  margin-top: var(--space-20);
+}
+
+.numerology__form label {
+  font-weight: var(--medium-weight);
+}
+
+.numerology__form input {
+  border: 2px solid var(--primary-foreground);
+  padding: var(--space-05);
+  background-color: var(--primary-background);
+  color: var(--primary-foreground);
+}
+
+.info--numerology {
+  padding-top: var(--space-20);
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+}
+
+.info--numerology h3 {
+  padding-bottom: var(--space-10);
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .numerology__paragraph {
+    width: 50%;
+  }
+
+  .info--numerology {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}

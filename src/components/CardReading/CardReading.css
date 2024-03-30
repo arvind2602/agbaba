@@ -1,0 +1,38 @@
+.reading--description {
+  width: 70%;
+  text-align: start;
+  margin: auto;
+  padding-bottom: var(--space-20);
+}
+
+.card__list--reading {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: var(--space-10);
+  margin: auto;
+  padding: var(--space-20);
+}
+
+.card__btn--reading {
+  display: block;
+  margin: var(--space-20) auto;
+}
+
+@media (min-width: 920px) {
+  .card__list--reading {
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card__list--reading {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .card__list--reading {
+    width: 50%;
+  }
+}

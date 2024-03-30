@@ -1,0 +1,38 @@
+.card__link {
+  letter-spacing: 0;
+}
+
+.card__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: var(--medium-weight);
+  gap: var(--space-10);
+}
+
+.card__item span {
+  background-color: var(--quaternary-foreground);
+  padding: var(--space-02);
+}
+
+.card__img {
+  height: 8rem;
+}
+
+[data-theme='dark'] .card__img {
+  -webkit-filter: invert(80%);
+  filter: invert(80%);
+}
+
+@media (min-width: 768px) {
+  .card__img {
+    height: 6rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .card__img {
+    height: 8rem;
+  }
+}

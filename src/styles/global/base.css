@@ -1,0 +1,51 @@
+html {
+  background-color: var(--primary-background);
+}
+
+body {
+  font-family: var(--body-font);
+  font-weight: var(--regular-weight);
+  font-size: var(--regular-size);
+  color: var(--primary-foreground);
+  letter-spacing: var(--space-005);
+  font-size: var(--regular-size);
+}
+
+button {
+  padding: var(--space-05);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+button:hover {
+  cursor: pointer;
+  transition: ease-in-out var(--duration-slow);
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-family: var(--title-font);
+  font-size: var(--large-size);
+  text-align: center;
+}
+
+h2 {
+  font-family: var(--highlight-font);
+  font-size: var(--medium-size);
+}
+
+h3 {
+  font-family: var(--body-font);
+  font-size: var(--medium-size);
+  font-weight: var(--light-weight);
+}
+
+.page {
+  min-height: 100vh;
+}

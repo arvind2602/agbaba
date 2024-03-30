@@ -1,0 +1,19 @@
+.glow {
+  background: linear-gradient(-45deg, #ffe550, #e7a53c, #d55e23, #f59928);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+}
+
+html[data-theme='dark'] .glow {
+  background: linear-gradient(-45deg, #8952ee, #6c00b5, #3823d5, #be28f5);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+}
+
+.magic-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 200px;
+  color: var(--white-sheer);
+}
