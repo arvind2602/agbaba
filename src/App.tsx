@@ -11,6 +11,7 @@ import Zodiac from './pages/Zodiac/Zodiac';
 import ZodiacSignDetails from './pages/ZodiacSignDetails/ZodiacSignDetails';
 import NotFound from './pages/NotFound/NotFound';
 import Numerology from './pages/Numerology/Numerology';
+import Ai from './pages/Ai/Ai';
 
 import './App.css';
 
@@ -38,6 +39,7 @@ function App() {
         <Route path="/zodiac/:id" element={<ZodiacSignDetails />} />
         <Route path="/tarot" element={<Tarot />} />
         <Route path="/numerology" element={<Numerology />} />
+        <Route path="/ai" element={<Ai />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
