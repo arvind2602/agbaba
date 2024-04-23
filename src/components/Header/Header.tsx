@@ -62,6 +62,17 @@ export default function Header() {
           </li>
           <li className="nav__item">
             <NavLink
+              to="/ai"
+              className={
+                location.pathname === '/ai' ? 'active' : 'nav__link'
+              }
+              onClick={closeMenu}
+            >
+              AI
+            </NavLink>
+          </li>
+          <li className="nav__item">
+            <NavLink
               to="/zodiac"
               className={
                 location.pathname === '/zodiac' ? 'active' : 'nav__link'
@@ -71,17 +82,7 @@ export default function Header() {
               Zodiac Signs
             </NavLink>
           </li>
-          <li className="nav__item">
-            <NavLink
-              to="/tarot"
-              className={
-                location.pathname === '/tarot' ? 'active' : 'nav__link'
-              }
-              onClick={closeMenu}
-            >
-              Tarots
-            </NavLink>
-          </li>
+          
           <li className="nav__item">
             <NavLink
               to="/numerology"
