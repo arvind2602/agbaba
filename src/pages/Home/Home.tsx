@@ -3,13 +3,14 @@ import moonPhases from '../../assets/images/moon-phases.png';
 import butterfly from '../../assets/images/butterfly.png';
 import butterflyTwo from '../../assets/images/butterfly-2.png';
 import moth from '../../assets/images/moth.png';
-
+import axios from 'axios';
 import Button from '../../components/Button/Button';
 // import {
 //   FormData,
 // } from '../../components/SubscribeForm/SubscribeForm';
 
 import './Home.css';
+import { useEffect } from 'react';
 
 export default function Home() {
 //   const handleSubmit = (formData: FormData) => {
@@ -21,6 +22,19 @@ export default function Home() {
 //     Email: ${formData.email}
 // `);
 //   };
+const activateApi = async () => {
+  try {
+    const response = await axios.get('https://sepm.onrender.com/');
+    console.log(response);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+useEffect(() => {
+  activateApi();
+}
+, []);
 
   return (
     <div className="home">
