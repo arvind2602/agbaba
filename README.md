@@ -1,8 +1,8 @@
-# LUNAR - Astrology, Tarot and Numerology App
+# solar - Astrology, Tarot and Numerology App
 
 [React.js](https://react.dev/) web app that fetches data from [Tarot API](https://jps-tarot-api.azurewebsites.net/swagger/index.html). Internal data is also employed to a limited extent.
 
-Deployed version of [LUNAR](https://lunar-app.netlify.app/).
+Deployed version of [solar](https://solar-app.netlify.app/).
 
 ## Table of contents
 
@@ -15,7 +15,7 @@ Deployed version of [LUNAR](https://lunar-app.netlify.app/).
 
 ## Overview
 
-Lunar is a user-friendly app featuring a responsive design that seamlessly transitions between light and dark modes. It's perfect for individuals who want to explore astrology-related subjects but are new to the field. Lunar offers a comprehensive zodiac sign library, a tarot card collection, personalized tarot card readings, and a numerology calculator based on birth date and name.
+solar is a user-friendly app featuring a responsive design that seamlessly transitions between light and dark modes. It's perfect for individuals who want to explore astrology-related subjects but are new to the field. solar offers a comprehensive zodiac sign library, a tarot card collection, personalized tarot card readings, and a numerology calculator based on birth date and name.
 
 ## Built with
 

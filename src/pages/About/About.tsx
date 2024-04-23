@@ -14,7 +14,7 @@ export default function About() {
   return (
     <section className="about">
       <h1>About</h1>
-      <h3>So what is Lunar, really?</h3>
+      <h3>So what is solar, really?</h3>
       <p className="about__info">
         In this section I will walk you through all you need to know about my
         website.
