@@ -59,7 +59,7 @@ function Ai() {
                 <div className="flex flex-col gap-4">
                     {loading ?
 
-                        <img src={thinking} alt='"Thinking' className='h-auto w-1/4' /> :
+                        <img src={thinking} alt='"Thinking' className='h-auto w-1/3 text-center mx-auto' /> :
                         <div>
                             {!localStorage.getItem('end') ?
                                 <div>

@@ -37,7 +37,7 @@ export default function Footer() {
         </li>
       </ul> */}
       <div className="footer__copyright">
-        <p>&copy; 2024 Solar. All Rights Reserved.</p>
+        <p>&copy; 2024 Agbaba. All Rights Reserved.</p>
       </div>
     </footer>
   );

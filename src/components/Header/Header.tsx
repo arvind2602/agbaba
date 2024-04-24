@@ -30,7 +30,7 @@ export default function Header() {
       <nav className={'nav'}>
         <div className="nav__options">
           <NavLink className="logo" to="/">
-            SOLAR
+            Agbaba
           </NavLink>
           {/* <ThemeToggle /> */}
           <div className="menu" onClick={closeMenu}>

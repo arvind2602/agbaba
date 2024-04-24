@@ -1,8 +1,8 @@
-# solar - Astrology, Tarot and Numerology App
+# Agbaba - Astrology, Tarot and Numerology App
 
 [React.js](https://react.dev/) web app that fetches data from [Tarot API](https://jps-tarot-api.azurewebsites.net/swagger/index.html). Internal data is also employed to a limited extent.
 
-Deployed version of [solar](https://solar-app.netlify.app/).
+Deployed version of [Agbaba](https://Agbaba-app.netlify.app/).
 
 ## Table of contents
 
@@ -15,7 +15,7 @@ Deployed version of [solar](https://solar-app.netlify.app/).
 
 ## Overview
 
-solar is a user-friendly app featuring a responsive design that seamlessly transitions between light and dark modes. It's perfect for individuals who want to explore astrology-related subjects but are new to the field. solar offers a comprehensive zodiac sign library, a tarot card collection, personalized tarot card readings, and a numerology calculator based on birth date and name.
+Agbaba is a user-friendly app featuring a responsive design that seamlessly transitions between light and dark modes. It's perfect for individuals who want to explore astrology-related subjects but are new to the field. Agbaba offers a comprehensive zodiac sign library, a tarot card collection, personalized tarot card readings, and a numerology calculator based on birth date and name.
 
 ## Built with
 

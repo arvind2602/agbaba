@@ -40,10 +40,10 @@ useEffect(() => {
     <div className="home">
       <section className="home__first-section">
         <div className="home__info">
-          <h1 className="home__logo">solar☾</h1>
+          <h1 className="home__logo">Agbaba☾</h1>
           <h2 className="home__heading">Astrology in your pocket.</h2>
           <p className="home__subheading">
-            Welcome to the mystical world of solar, your gateway to unlocking
+            Welcome to the mystical world of Agbaba, your gateway to unlocking
             the secrets of the cosmos and discovering the hidden truths that lie
             within the Tarot cards.
           </p>
@@ -63,7 +63,7 @@ useEffect(() => {
       </section>
 
       <section className="home__second-section">
-        <h2 className="home__heading">What can you find on solar?</h2>
+        <h2 className="home__heading">What can you find on Agbaba?</h2>
         <ul className="home__list">
           <li className="home__list-item">
             <img src={moth} className="home__icon invert"></img>
