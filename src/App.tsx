@@ -5,7 +5,6 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
 import Home from '../src/pages/Home/Home';
-import About from './pages/About/About';
 import Tarot from './pages/Tarot/Tarot';
 import Zodiac from './pages/Zodiac/Zodiac';
 import ZodiacSignDetails from './pages/ZodiacSignDetails/ZodiacSignDetails';
@@ -34,7 +33,6 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
         <Route path="/zodiac" element={<Zodiac />} />
         <Route path="/zodiac/:id" element={<ZodiacSignDetails />} />
         <Route path="/tarot" element={<Tarot />} />
