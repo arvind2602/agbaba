@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useState } from 'react';
 import { IoIosAlert } from "react-icons/io";
+import thinking from '../../assets/images/carousel-2.gif'
 
 function Ai() {
     const [ai, setAi] = useState<string>('');
@@ -30,7 +31,7 @@ function Ai() {
     const handleMessage = async () => {
         try {
             const response = await axios.post('https://sepm.onrender.com/complete', {
-                message: `The individual's Date of Birth is ${localStorage.getItem('dob')}, Place of Birth is ${localStorage.getItem('place')}, Name is ${localStorage.getItem('name')} and the question is ${messages} for accurate analysis and personalized readings.`
+                message: `My Date of Birth is ${localStorage.getItem('dob')}, Place of Birth is ${localStorage.getItem('place')}, Name is ${localStorage.getItem('name')} and the question is ${messages} for accurate analysis and personalized readings.`
             });
             setAi(response.data.result.text);
 
@@ -58,7 +59,7 @@ function Ai() {
                 <div className="flex flex-col gap-4">
                     {loading ?
 
-                        <img src='src/assets/images/carousel-2.gif' alt='"Thinking' className='h-auto w-1/4' /> :
+                        <img src={thinking} alt='"Thinking' className='h-auto w-1/4' /> :
                         <div>
                             {!localStorage.getItem('end') ?
                                 <div>
