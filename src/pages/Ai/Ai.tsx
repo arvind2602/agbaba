@@ -9,6 +9,7 @@ function Ai() {
     const [place, setPlace] = useState<string>('');
     const [name, setName] = useState<string>('');
     const [messages, setMessages] = useState<string>('');
+    const [count, setCount] = useState<number>(0);
 
     const handleData = async () => {
         localStorage.setItem('dob', dob);
@@ -19,12 +20,17 @@ function Ai() {
         setLoading(true);
         setAi('');
         await handleMessage();
-    }
+        setCount(count + 1);
+        if (count === 1) {
+            localStorage.setItem('end', 'Free Questions Limit Reached.');
+        }
 
+
+    }
     const handleMessage = async () => {
         try {
             const response = await axios.post('https://sepm.onrender.com/complete', {
-                message: `The task involves providing detailed insights and predictions for the question asked based on an individual's date of birth, place of birth, and name using the principles of astrology and numerology. To approach this, astrological interpretations, numerology principles, and intuitive insights will be utilized to craft personalized readings that resonate deeply with the seeker. The analysis will involve interpreting the alignment of celestial bodies at birth, including the influence of the Ascendant Sign on personality traits and the impact of the Moon's Position on emotions and instincts. Numerology will be applied. Intuitive perceptions will enhance the analysis, providing holistic guidance that covers spiritual and emotional aspects. Insights and predictions will be tailored to address the specific question asked. The goal is to deliver detailed, relevant, and insightful responses with clarity and coherence in predictions and guidance. The individual's Date of Birth is ${localStorage.getItem('dob')}, Place of Birth is ${localStorage.getItem('place')}, Name is ${localStorage.getItem('name')} and the question is ${messages} for accurate analysis and personalized readings. Your answer should be clear and concise less than 180 words, with bullet points, selecting a fitting emoji for each focusing on conveying the main ideas effectively.`
+                message: `The individual's Date of Birth is ${localStorage.getItem('dob')}, Place of Birth is ${localStorage.getItem('place')}, Name is ${localStorage.getItem('name')} and the question is ${messages} for accurate analysis and personalized readings.`
             });
             setAi(response.data.result.text);
 
@@ -33,7 +39,6 @@ function Ai() {
         }
         setLoading(false);
     }
-
     return (
         <div className="flex flex-col items-center min-h-screen justify-center bg-gray-100">
             <h1 className="text-4xl font-bold mb-4">AI</h1>
@@ -53,11 +58,17 @@ function Ai() {
                 <div className="flex flex-col gap-4">
                     {loading ?
 
-                        <p className="text-sm text-white bg-red-400 rounded-md p-2 font-extralight">It usually takes 1-2 minutes to respond.</p>
-                        :
+                        <img src='src/assets/images/carousel-2.gif' alt='"Thinking' className='h-auto w-1/4' /> :
                         <div>
-                            <input type="text" placeholder="Ask your question" onChange={(e) => setMessages(e.target.value)} className=" p-2 text-base rounded-md m-2" />
-                            <button onClick={handleSend} className="btn-primary bg-green-900 text-white rounded-md">Send</button>
+                            {!localStorage.getItem('end') ?
+                                <div>
+                                    <input type="text" placeholder="Ask your question" onChange={(e) => setMessages(e.target.value)} className=" p-2 text-base rounded-md m-2" />
+                                    <button onClick={handleSend} className="btn-primary bg-green-900 text-white rounded-md">Send</button>
+                                </div>
+                                :
+                                <div><p className="text-sm text-white bg-red-400 rounded-md p-2 font-extralight">You have reached the limit of questions.</p>
+                                </div>
+                            }
                         </div>}
 
                 </div> :
