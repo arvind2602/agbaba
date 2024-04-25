@@ -50,7 +50,7 @@ useEffect(() => {
           <Button
             as="link"
             children="Start now →"
-            url={'/numerology'}
+            url={'/ai'}
             target={'_self'}
             className="home__button"
           />
