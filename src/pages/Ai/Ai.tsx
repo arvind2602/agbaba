@@ -76,7 +76,7 @@ function Ai() {
                 <p className="bg-green-200 text-black flex p-2 rounded-md w-1/2 text-sm font-extralight text-center"><IoIosAlert className='my-auto mx-1 text-red-600' /> Please provide your details to receive a fully customized answer to your questions.</p>
             }
             {ai === '' ? <p className="text-base mt-4 w-1/2 text-justify "></p> :
-                <p className="text-base mt-4 w-1/2 text-justify bg-gray-200 p-4 rounded-md flex flex-col mb-8"><span className='font-bold font-serif mb-2 text-lg'>{messages}</span>{ai}</p>}
+                <pre className="text-base mt-4 w-1/2 text-wrap bg-gray-200 p-4 rounded-md flex flex-col mb-8"><span className='font-bold font-serif mb-2 text-lg'>{messages}</span>{ai}</pre>}
         </div>
     );
 }
