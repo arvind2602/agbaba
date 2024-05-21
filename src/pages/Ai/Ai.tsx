@@ -22,7 +22,7 @@ function Ai() {
         setAi('');
         await handleMessage();
         setCount(count + 1);
-        if (count === 1) {
+        if (count === 100) {
             localStorage.setItem('end', 'Free Questions Limit Reached.');
         }
 
